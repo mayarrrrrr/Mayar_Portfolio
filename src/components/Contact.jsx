@@ -61,19 +61,19 @@ export const Contact = () =>{
                     <form onSubmit={handleSubmit}>
                         <Row>
                             <Col sm={6} className="px-1">
-                            <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=>onFormUpdate('firstName',e.target)}/>
+                            <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=>onFormUpdate('firstName',e.target.value)}/>
                             </Col>
                             <Col sm={6} className="px-1">
-                            <input type="text" value={formDetails.firstName} placeholder="Last Name" onChange={(e)=>onFormUpdate('lastName',e.target)}/>
+                            <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e)=>onFormUpdate('lastName',e.target.value)}/>
                             </Col>
                             <Col>
-                            <input type="email" value={formDetails.email} placeholder="email" onChange={(e)=>onFormUpdate('email',e.target)}/>
+                            <input type="email" value={formDetails.email} placeholder="email" onChange={(e)=>onFormUpdate('email',e.target.value)}/>
                             </Col>
                             <Col>
-                            <input type="tel" value={formDetails.phone} placeholder="phone" onChange={(e)=>onFormUpdate('phone',e.target)}/>
-                            </Col>
+                            <input type="tel" value={formDetails.phone} placeholder="phone" onChange={(e)=>onFormUpdate('phone',e.target.value)}/>
+                            </Col>  
                             <Col>
-                            <textarea row="6" value={formDetails.message} placeholder="Message" onChange={(e)=> onFormUpdate('message',e.target)} />
+                            <textarea row="6" value={formDetails.message} placeholder="Message" onChange={(e)=> onFormUpdate('message',e.target.value)} />
                                 <button type="submit"><span>{buttonText}</span></button>
                             </Col>
                             {

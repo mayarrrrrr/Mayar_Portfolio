@@ -17,7 +17,7 @@ export const Footer = () => {
                     <div className="social-icon">
                         <a href=""><img src={navIcon1}/></a>
                         <a href=""><img src={navIcon2}/></a>
-                        <p>CopyRight 2022. All Right Reserved</p>
+                        <p>CopyRight. All Right Reserved</p>
                     </div>
                     
                     </Col>
