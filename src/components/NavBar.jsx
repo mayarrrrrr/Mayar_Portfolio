@@ -66,11 +66,13 @@ export const NavBar = () => {
                   <img src={navIcon2} alt="LinkedIn Profile" />
                 </a>
               </div>
+              <a href="https://www.linkedin.com/in/mayar-akok-05871a2a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
               <button className="vvd">
                 
-                  <a href="https://www.linkedin.com/in/mayar-akok-05871a2a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><span>Let’s Connect</span></a>
+                  <span>Let’s Connect</span>
                 
               </button>
+              </a>
             </span>
           </Nav>
         </Navbar.Collapse>
