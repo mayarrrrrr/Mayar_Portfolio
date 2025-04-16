@@ -10,6 +10,7 @@ import { Skills } from './components/Skills'
 import { Newsletter } from './components/Newsletter'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import SearchFilter from './components/Searchbar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,11 +18,13 @@ function App() {
   return (
     <div className='App'>
       <NavBar />
+      
       <Banner />
+      <SearchFilter />
       <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      {/* <Projects /> */}
+      {/* <Contact /> */}
+      {/* // <Footer /> */}
     </div>
   )
 }
