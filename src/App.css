@@ -289,6 +289,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   .navbar-text button {
     margin: 15px auto 0;
   }
+
+  .navbarimg{
+    height: 50px;
+  }
 }
 
 
