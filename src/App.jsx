@@ -20,7 +20,7 @@ function App() {
       <NavBar />
       
       <Banner />
-      <SearchFilter />
+      {/* <SearchFilter /> */}
       <Skills />
       {/* <Projects /> */}
       {/* <Contact /> */}
