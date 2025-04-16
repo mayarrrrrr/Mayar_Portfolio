@@ -280,7 +280,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   }
 
   .navbar-text {
-    flex-direction: column;
+    display: flex; /* Ensure it's a flex container */
+    flex-direction: row; /* Items will align in a row */
     margin-left: 0;
     margin-top: 20px;
     align-items: center;
