@@ -5,41 +5,46 @@ import {useState,useEffect} from "react"
 
 export const Banner = ()=>{
 
-    const [loopNum,setLoopNum] = useState(0)
-    const [isDeleting,setIsDeleting] = useState(false)
-    const toRotate = ['Full stack Developer','Cloud Engineer','Backend Developer']
-    const [text,setText] = useState('')
-    const [delta, setDelta] = useState(300 - Math.random() * 100)
-    const period = 2000
+    const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const toRotate = ['Full Stack Developer', 'Cloud Engineer', 'Backend Developer'];
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(100);
+  const period = 2000;
 
-    useEffect(() =>{
-        let ticker = setInterval(()=>{
-            tick()
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      tick();
+    }, delta);
 
-        },delta)
-        return ()=>{clearInterval(ticker)}
-    },[text])
+    return () => clearTimeout(timeout); // Clear the previous timeout
+  }, [text]); // Re-run when text changes
 
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0,text.length - 1): fullText.substring(0,text.length + 1)
+  const tick = () => {
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
 
-        setText(updatedText)
+    const updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
 
-        if (isDeleting){
-            setDelta(prevDelta => prevDelta / 2)
-        }
+    setText(updatedText);
 
-        if (!isDeleting && updatedText === fullText){
-            setIsDeleting(true);
-            setDelta(period);
+    // Adjust typing speed
+    if (isDeleting) {
+      setDelta(30); // Faster delete
+    } else {
+      setDelta(60); // Faster typing
+    }
 
-        }else if(isDeleting && updatedText == ''){
-            setIsDeleting(false);
-            setLoopNum(loopNum + 1);
-            setDelta(500)
-        }
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period); // Pause before deleting
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(300); // Pause before typing next word
+    }
     }
 
 
