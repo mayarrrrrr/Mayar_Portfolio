@@ -50,7 +50,7 @@ export const Banner = ()=>{
                     <Col xs={12} md={6} xl={7} >
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>{`Hi I'm Mayar, `}<span className="wrap">a {text}</span></h1>
-                    <p>As a fullstack developer, I’ve particularly been drawn to  not only seamless user interfaces but also architecture of backend systems. Reading through tech documentation has been my new norm,getting updated on new features and understanding evolving frameworks.  I thrive on solving real-world problems through clean, efficient code.</p>
+                    <p>I'm a full-stack developer and aspiring cloud engineer with a passion for clean user interfaces, scalable backend systems, and efficient cloud-ready solutions. Reading technical documentation is part of my routine, keeping me up to date with new features and evolving frameworks. I thrive on solving real-world problems through clean, effective code.</p>
                     <button onClick={()=> console.log("connect")}>Let’s connect<i className="bi bi-arrow-right-circle"></i>
                     </button>
                     </Col>
