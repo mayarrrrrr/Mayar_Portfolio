@@ -586,6 +586,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   z-index: -4;
 }
 
+@media (max-width: 540px){
+  .proj-imgbx img{
+    width: 130px;         /* Set a reasonable size for mobile */
+    height: 150px;
+    
+  }
+  .nav-name{
+    font-size: 15px;
+  }
+}
+
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
