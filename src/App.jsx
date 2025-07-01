@@ -22,7 +22,7 @@ function App() {
       <Banner />
       {/* <SearchFilter /> */}
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Contact /> */}
        <Footer />
     </div>

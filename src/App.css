@@ -522,6 +522,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 }
 .proj-imgbx img{
   height: 230px;
+  width: 200px;
+}
+.proj-imgbx button{
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  font-size: 16px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  border-radius: 50px;
+  margin-top: 30px;
+  
+
 }
 .proj-imgbx::before {
   content: "";
@@ -549,7 +565,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   top: 50%;
   opacity: 1;
 }
-.proj-txtx h4 {
+.proj-txtx h1 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;

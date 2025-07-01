@@ -45,6 +45,10 @@ export const Skills =()=>{
                             </div>
                             <div className="item">
                                 <img src={meter1} alt=""/>
+                                <h5>Figma/Canva designs </h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt=""/>
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
